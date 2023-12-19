@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %} Rate My Courses {% endblock %}
+
+{% block content %}
+<style>
+    #courseSearch {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 16px;
+        width: 50%;
+        box-sizing: border-box;
+        color: rgb(0, 0, 139);
+        border: 1px solid rgb(0, 0, 139);
+    }
+
+    #courseCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+        margin: 20px auto;
+    }
+
+    .courseCard {
+        position: relative; /* Set to relative positioning */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+        width: 170px;
+        height: 150px;
+        text-align: left;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer; 
+    }
+
+    .courseCard:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .courseCard a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .courseCode {
+        font-weight: bold;
+        margin-bottom: -10px;
+    }
+
+    .courseName {
+        margin-bottom: 5px;
+    }
+
+    .courseCredit {
+        position: absolute;
+        bottom: 0px; 
+    }
+</style>
+
+<h1 style="text-align:center; font-size: 36px; margin-top: 20px; margin-bottom: 5px;"> RATE MY COURSES </h1>
+<h2 style="text-align:center; font-size: 24px; margin-top: 0px; margin-bottom: 20px; font-weight: lighter;"> See reviews, get advice, and rate your college courses </h2>
+
+<input type="text" id="courseSearch" placeholder="Search for a course..." oninput="filterCourses()">
+
+<div id="courseCards">
+    {% for course in courses %}
+    <div class="courseCard" data-code='{{ course.code }}' data-name='{{ course.name }}' data-credit='{{ course.credit }}'>
+        <a href="course/{{ course.code }}">
+            <p class="courseCode">{{ course.code }}</p>
+            <p class="courseName">{{ course.name }}</p>
+            <p class="courseCredit">{{ course.credit }} credits </p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    function filterCourses() {
+        var input = document.getElementById('courseSearch').value.toLowerCase();
+
+        var courseCards = document.getElementsByClassName('courseCard');
+
+        for (var i = 0; i < courseCards.length; i++) {
+            var code = courseCards[i].getAttribute('data-code').toLowerCase();
+            var name = courseCards[i].getAttribute('data-name').toLowerCase();
+            var credit = courseCards[i].getAttribute('data-credit').toLowerCase();
+            var displayStyle = (code.includes(input) || name.includes(input) || credit.includes(input)) ? '' : 'none';
+            courseCards[i].style.display = displayStyle;
+        }
+    }
+</script>
+
+{% endblock %}

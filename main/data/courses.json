@@ -1,0 +1,411 @@
+[
+    {
+      "code": "CICS 109",
+      "name": "INTRODUCTION TO DATA ANALYSIS IN R",
+      "description": "An introduction to data analysis in the open-source R language, with an emphasis on practical data work. Topics will include data wrangling, summary statistics, modeling, and visualization. Will also cover fundamental programming concepts including data types, functions, flow of control, and good programming practices. Intended for a broad range of students outside of computer science. Some familiarity with statistics is expected.",
+      "credit": "1"
+    },
+    {
+      "code": "CICS 110",
+      "name": "FOUNDATIONS OF PROGRAMMING",
+      "description": "An introduction to computer programming and problem-solving using computers. This course teaches you how real-world problems can be solved computationally using programming constructs and data abstractions of a modern programming language. Concepts and techniques covered include variables, expressions, data types, objects, branching, iteration, functions, classes, and methods.",
+      "credit": "4"
+    },
+    {
+      "code": "CICS 127",
+      "name": "INTRODUCTION TO PUBLIC INTEREST TECHNOLOGY",
+      "description": "Today's world is complex and tech-driven. How do we use the tools of information technology to solve problems in a socially responsible way, i.e., in a way that both empowers us and promotes the well-being of the communities in which we live? In this course, we describe the socio-technical world and pragmatic strategies for promoting personal and social responsibility.",
+      "credit": "4"
+    },
+    {
+      "code": "CICS 160",
+      "name": "OBJECT-ORIENTED PROGRAMMING",
+      "description": "This course will expose students to programming practices beyond the introductory level, concentrating on Object-Oriented Programming techniques and an introduction to Data Structures. Students will also study and analyze the complexity of both the algorithms presented in class and of the algorithms they develop.",
+      "credit": "4"
+    },
+    {
+      "code": "CICS 210",
+      "name": "DATA STRUCTURES",
+      "description": "An introduction to the design, analysis, and implementation of data structures. This course teaches you how to build, test, debug, document, and evaluate objects that encapsulate data and their associated operations using programming constructs and data abstractions of a modern programming language.",
+      "credit": "4"
+    },
+    {
+      "code": "CICS 256",
+      "name": "MAKE: A HANDS-ON INTRODUCTION TO PHYSICAL COMPUTING",
+      "description": "Inspired by the Maker movement, this course provides a hands-on introduction to physical computing: sensing and responding to the physical world using computers. Specific topics include basic electronics and circuit design, microcontroller programming using Arduinos, sensing and responding to the physical world, rapid prototyping (3D printing and laser cutting etc.), soft circuits and wearable electronics.",
+      "credit": "4"
+    },
+    {
+      "code": "CICS 291S",
+      "name": "SEMINAR - CICS SECOND YEAR PATHWAYS",
+      "description": "This seminar will give students the opportunity to learn more about the different areas and career pathways in computer science, through guest lectures by professors and grad students, reading research papers, and coordination with CICS Careers.",
+      "credit": "1"
+    },
+    {
+      "code": "CICS 291T",
+      "name": "SEMINAR - CICS TRANSFER SUCCESS",
+      "description": "This seminar is intended to help you become fully prepared to succeed in CICS at UMass. Students in this seminar will be led by an instructor with a detailed understanding of the transfer student experience.",
+      "credit": "1"
+    },
+    {
+      "code": "CICS 298A",
+      "name": "LEADERSHIP: COMMUNICATING ACROSS EXPERTISE",
+      "description": "No matter where you end up in tech, you will need to explain concepts, products, and ideas to people with different technical backgrounds. This course is intended to help prepare you for these communication tasks.",
+      "credit": "1"
+    },
+    {
+      "code": "CICS 305",
+      "name": "SOCIAL ISSUES IN COMPUTING",
+      "description": "Through a careful analysis and discussion of a range of computing issues, topics, and policies, we will explore various impacts of computers on modern society. This class satisfies the Junior Year Writing requirement by providing directed practice and specific instruction in a range of writing genres.",
+      "credit": "3"
+    },
+    {
+      "code": "COMPSCI 119",
+      "name": "INTRODUCTION TO PROGRAMMING",
+      "description": "A complete introduction to computer programming using the Python language. Topics include coverage of all the supported data types and program code structures, functions (up through lambda expressions and recursion), reasoning about and debugging existing code, implementation of custom libraries, selection of data structures, and the fundamentals of object-oriented programming.",
+      "credit": "3"
+    },
+    {
+      "code": "COMPSCI 198C",
+      "name": "INTRODUCTION TO THE C PROGRAMMING LANGUAGE",
+      "description": "This practicum assumes general background and experience in computer programming (such as that provided by COMPSCI 121 or a similar introductory programming course) and some knowledge of data structures. Content will include basic C data types, declarations, expressions, statements, and functions; simple use of macros; some common library calls (such as formatted input/output); basic pointer manipulation using linked lists; and introduction to using standard tools (gcc and make).",
+      "credit": "1"
+    },
+    {
+      "code": "COMPSCI 220",
+      "name": "PROGRAMMING METHODOLOGY",
+      "description": "Development of individual skills necessary for designing, implementing, testing and modifying larger programs, including: design strategies and patterns, using functional and object-oriented approaches, testing and program verification, code refactoring, interfacing with libraries. There will be significant programming and mid-term and final examinations.",
+      "credit": "4"
+    },
+    {
+      "code": "COMPSCI 230",
+      "name": "COMPUTER SYSTEMS PRINCIPLES",
+      "description": "Large-scale software systems like Google - deployed over a world-wide network of hundreds of thousands of computers - have become a part of our lives. These are systems",
+      "credit": "4"
+    },
+    {
+        "code": "COMPSCI 240",
+        "name": "REASONING UNDER UNCERTAINTY",
+        "description": "Development of mathematical reasoning skills for problems that involve uncertainty. Each concept will be illustrated by real-world examples and demonstrated through in-class and homework exercises. Counting and probability -- basic counting problems, probability definitions, mean, variance, binomial distribution, discrete random variables, continuous random variables, Markov and Chebyshev bounds, Laws of large numbers, and central limit theorem. Probabilistic reasoning -- conditional probability and odds, Bayes' Law, Markov Chains, Bayesian Networks. Statistical topics such as estimation of parameters and linear regression, as time permits.",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 250",
+        "name": "INTRODUCTION TO COMPUTATION",
+        "description": "Basic concepts of discrete mathematics useful to computer science: set theory, strings and formal languages, propositional and predicate calculus, relations and functions, basic number theory. Induction and recursion: interplay of inductive definition, inductive proof, and recursive algorithms. Graphs, trees, and search. Finite-state machines, regular languages, nondeterministic finite automata, Kleene's Theorem. Problem sets, 2 midterm exams, timed final.",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 311",
+        "name": "INTRODUCTION TO ALGORITHMS",
+        "description": "This course will introduce you to a variety of techniques to design algorithms, such as divide and conquer, greedy, dynamic programming, and network flow. You will learn to study the performance of various algorithms within a formal, mathematical framework. You will also learn how to design very efficient algorithms for many kinds of problems and recognize problems that currently do not have efficient algorithms. Assignments may include programming: you should be able to program in Java, C, or some other closely related language. Mathematical experience (as provided by COMPSCI 250) is required. This course is required for the CS Major (BS) and counts as an Elective toward the CS Major (BA).",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 320",
+        "name": "INTRODUCTION TO SOFTWARE ENGINEERING",
+        "description": "In this course, students learn and gain practical experience with software engineering principles and techniques. The practical experience centers on a semester-long team project in which a software development project is carried through all the stages of the software life cycle. Topics in this course include requirements analysis, specification, design, abstraction, programming style, testing, maintenance, communication, teamwork, and software project management. Particular emphasis is placed on communication and negotiation skills and on designing and developing maintainable software. Use of computer required. Several written assignments, in-class presentations, and a term project. This course satisfies the IE Requirement and counts as a CS Elective for the CS Major.",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 325",
+        "name": "INTRODUCTION TO HUMAN COMPUTER INTERACTION",
+        "description": "Human-Computer Interaction design is \"design for human use\". Computers are a ubiquitous part of many interactions in our lives, from the mundane everydayness of light switches and \"smart\" vending machines to entertainment and education to sophisticated instruments and complex energy and defense systems. In this course, we will challenge you to broaden your grasp of what a user interface can and should be, and try your hand at doing better yourself. It is a fast-paced, hands-on, project-based experience that will challenge many of your ideas of what computer science is and can be.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 326",
+        "name": "WEB PROGRAMMING",
+        "description": "The web is arguably today's most important application platform. Web browsers run on practically every device, and even many phone applications are in fact web applications under the covers. This course will cover a broad range of client-side web technologies, including HTTP itself, HTML5, CSS, and JavaScript; it will additionally cover key concepts for the server side of web applications, including key value stores and SQL servers. This course will also cover key concepts and technologies including AJAX, JavaScript libraries (e.g., jQuery), and web security. This course is hands-on and heavily project-based; students will construct a substantial dynamic web application based on the concepts, technologies, and techniques presented during lectures and in readings.",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 345",
+        "name": "PRACTICE AND APPLICATIONS OF DATA MANAGEMENT",
+        "description": "Computing has become data-driven, and databases are now at the heart of commercial applications. The purpose of this course is to provide a comprehensive introduction to the use of data management systems within the context of various applications. Some of the covered topics include application-driven database design, schema refinement, implementation of basic transactions, data on the web, and data visualization. This course counts as a CS Elective toward the CS Major. Students who have completed COMPSCI 445 are not eligible to take this course without instructor permission.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 348",
+        "name": "PRINCIPLES OF DATA SCIENCE",
+        "description": "Data science uses various concepts, practices, algorithms, and systems to extract knowledge and insights from data. It encompasses techniques from machine learning, statistics, databases, visualization, and several other fields. When properly integrated, these techniques can help human analysts make sense of vast stores of digital information. This course presents the fundamental principles of data science, familiarizes students with the technical details of representative algorithms, and connects these concepts to applications in industry, science, and government, including fraud detection, marketing, scientific discovery, and web mining. The course assumes that students are familiar with basic concepts and algorithms from probability and statistics.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 360",
+        "name": "INTRODUCTION TO COMPUTER AND NETWORK SECURITY",
+        "description": "This course provides an introduction to the principles and practice of computer and network security. A focus on both fundamentals and practical information will be stressed. The three key topics of this course are cryptography, privacy, and network security. Subtopics include ciphers, hashes, key exchange, security services (integrity, availability, confidentiality, etc.), security attacks, vulnerabilities, anonymous communications, and countermeasures. This course counts as a CS Elective for the CS Major.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 370",
+        "name": "INTRODUCTION TO COMPUTER VISION",
+        "description": "This introductory computer vision class will address fundamental questions about getting computers to \"see\" like humans. We investigate questions such as -What is the role of vision in intelligence? -How are images represented in a computer? -How can we write algorithms to recognize an object? -How can humans and computers \"learn to see better\" from experience? We will write a number of basic computer programs to do things like recognize handwritten characters, track objects in video, and understand the structure of images.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 373",
+        "name": "INTRODUCTION TO COMPUTER GRAPHICS",
+        "description": "This course introduces the fundamental concepts of 2D and 3D computer graphics. It covers the basic methods for modeling, rendering, and imaging. Topics include: image processing, 2D/3D modeling, 3D graphics pipeline, WebGL, shading, texture mapping, ray tracing, 3D printing. Throughout the class, we will teach students to learn modern graphics techniques, to model the visual world algorithmically, and to implement algorithms using JavaScript. Students who have taken COMPSCI 473 are not eligible to take this course. Students cannot take COMPSCI 497C after taking this course.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 377",
+        "name": "OPERATING SYSTEMS",
+        "description": "In this course we examine the important problems in operating system design and implementation. The operating system provides a well-known, convenient, and efficient interface between user programs and the bare hardware of the computer on which they run. The operating system is responsible for allowing resources (e.g., disks, networks, and processors) to be shared, providing common services needed by many different programs (e.g., file service, the ability to start or stop processes, and access to the printer), and protecting individual programs from one another.",
+        "credit": "4"
+      },
+      {
+        "code": "COMPSCI 383",
+        "name": "ARTIFICIAL INTELLIGENCE",
+        "description": "The course explores key concepts underlying intelligent systems, which are increasingly deployed in consumer products and online services. Topics include problem solving, state-space representation, heuristic search techniques, game playing, knowledge representation, logical reasoning, automated planning, reasoning under uncertainty, decision theory and machine learning. We will examine the use of these concepts in the design of intelligent agents in the context of several applications. Students should be comfortable programming in Python.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 389",
+        "name": "INTRODUCATION TO MACHINE LEARNING",
+        "description": "The course provides an introduction to machine learning algorithms and applications. Machine learning algorithms answer the question: \"How can a computer improve its performance based on data and from its own experience?\" The course is roughly divided into thirds: supervised learning (learning from labeled data), reinforcement learning (learning via trial and error), and real-world considerations like ethics, safety, and fairness.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 390R",
+        "name": "REVERSE ENGINEERING AND VULNERABILITY ANALYSIS",
+        "description": "Many software developers aren't aware of how to properly write secure code. This course covers practical skills in reverse engineering and binary exploitation, and examines the techniques used by hackers in recent major security incidents. The course objective is to provide students with a strong understanding of attack patterns, and to ensure students implement more secure coding practices in their own code. This course begins with an introduction to Intel-based assembly, reverse engineering, vulnerability analysis, and various forms of Linux-focused binary exploitation.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 391M",
+        "name": "SEMINAR - MAKE: AUDIO CIRCUIT ANALYSIS",
+        "description": "This course is designed for students who wish to expand on knowledge and experience gained previously from a Maker course by studying solid state electronics that are used for audio signal processing. Specifically, we will examine circuit designs that are behind effects used in contemporary musical compositions. Our focus will be on the theory that explains how electronics circuits work to process audio signals, such as \"clip\" waveforms (commonly known as distortion, fuzz, or overdrive). Students will gain experience in electronics theory, circuit design, sound processing, and circuit assembly/soldering skills. Does not count as a CS Elective.",
+        "credit": "1"
+      },
+      {
+        "code": "COMPSCI 420",
+        "name": "SOFTWARE ENTREPRENEURSHIP",
+        "description": "This course is geared towards students interested in developing software that moves from early stage proof-of-concept ideas towards marketable products with societal benefit. The course leverages the expertise of the Entrepreneurs in Residence (EIR) of the Ventures @ CICS initiative at CICS. The course is grounded in Challenge Based Learning (C",
+        "credit":"3"
+      },
+      {
+        "code": "COMPSCI 429",
+        "name": "SOFTWARE ENGINEERING PROJECT MANAGEMENT",
+        "description": "The purpose of this course is to provide students with practical experience in the management of software development projects. Students in this course will gain this experience by serving as software development team technical managers for teams of software engineering students in COMPSCI 320. As project managers, the students in COMPSCI 429 will be responsible for: supervising and managing the work of teams of COMPSCI 320 students; interfacing with the other COMPSCI 429 students managing other teams in the course; interfacing with the course instructor, course TA, and course customer...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 445",
+        "name": "INFORMATION SYSTEMS",
+        "description": "This course is an introduction to the efficient management of large-scale data. The course includes principles for representing information as structured data, query languages for analyzing and manipulating structured data, and core systems principles that enable efficient computation on large data sets. Classical relational database topics will be covered (data modeling, SQL, query optimization, concurrency control), as well as semi-structured data (XML, JSON), and distributed data processing paradigms (e.g. MapReduce and Spark)...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 446",
+        "name": "SEARCH ENGINES",
+        "description": "This course provides an overview of the important issues in information retrieval, and how those issues affect the design and implementation of search engines. The course emphasizes the technology used in Web search engines, and the information retrieval theories and concepts that underlie all search applications. Mathematical experience (as provided by COMPSCI 240) is required. You should also be able to program in Java (or some other closely related language)...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 453",
+        "name": "COMPUTER NETWORKS",
+        "description": "This course provides an introduction to fundamental concepts in the design and implementation of computer networks, their protocols, and applications with a particular emphasis on the Internet's TCP/IP protocol suite. Topics to be covered include: overview of network architectures, applications, network programming interfaces (e.g., sockets), transport, congestion, routing, and data link protocols, addressing, local area networks, wireless networks, network security, and network management. There will be five or six homeworks, two programming projects, several hands-on labs...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 466",
+        "name": "APPLIED CRYPTOGRAPHY",
+        "description": "This is an undergraduate-level introduction to cryptography. It is a theory course with a significant mathematical component. However, our viewpoint will be theory applied to practice in that we will aim to treat topics in a way of applied value. We will discuss cryptographic algorithms used in practice and how to reason about their security. More fundamentally, we will try to understand what security is in a rigorous way that allows us to follow sound principles and uncover design weaknesses. The primary topics are: blockciphers, pseudorandom functions, symmetric-key encryption schemes, hash functions...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 485",
+        "name": "APPLICATIONS OF NATURAL LANGUAGE PROCESSING",
+        "description": "This course will introduce NLP methods and applications, such as text classification, sentiment analysis, machine translation, and other applications to identify and use the meaning of text. During the course, students will (1) learn fundamental methods and algorithms for NLP; (2) become familiar with key facts about human language that motivate them, and help practitioners know what problems are possible to solve; and (3) complete a series of hands-on projects to use, implement, experiment with, and improve NLP tools...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 490Q",
+        "name": "QUANTUM INFORMATION SCIENCE",
+        "description": "Quantum information science (QIS) revolutionizes our understanding of the fundamental laws of the universe and promises world-altering improvements in a number of practical computational tasks. For theoretical computer scientists, QIS provides the means to unlock the ultimate computational powers available to us in this universe. For programmers and computer engineers, QIS offers the tools to run simulations and optimizations otherwise infeasible on classical computers...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 491G",
+        "name": "SEMINAR - COMPUTER NETWORKING LAB",
+        "description": "In this course, students will learn how to put \"principles into practice,\" in a hands-on-networking lab course. The course will cover router, switches and end-system labs in the areas of Single Segment IP Networks, Multiple Segment IP Networks and Static Routing, Dynamic Routing Protocols (RIP, OSPF and BGP), LAN switching, Transport Layer Protocols: UDP and TCP, NAT, DHCP, DNS, and SNMP. Students will also get engaged in evaluating power consumption of network components as an aid in the design of energy efficient (green) networks...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 496C",
+        "name": "INDEPENDENT STUDY - SOCIAL ENTREPRENEURSHIP LAUNCHPAD",
+        "description": "Social Entrepreneurship Launchpad offers a team-based opportunity to students who have successfully completed COMPSCI 420 (previously COMPSCI 490S) and are committed to launching marketable products that contribute to the common good. Teams will be mentored by CICS Entrepreneurs in Residence (EIRs) and UMass alumni. Teams test the commercial potential of their product ideas and receive mentoring and guidance from EIRs and industry partners to secure funding, build a marketing plan, and consolidate a customer base...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 501",
+        "name": "FORMAL LANGUAGE THEORY",
+        "description": "Introduction to formal language theory. Topics include finite state languages, context-free languages, the relationship between language classes and formal machine models, the Turing Machine model of computation, theories of computability, resource-bounded models, and NP-completeness. This course counts as an Elective toward the CS Major.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 508",
+        "name": "ETHICAL CONSIDERATIONS IN COMPUTING",
+        "description": "This course considers an array of ethical issues in computing. Readings, class discussions, and guest speakers will cover topics related to avenues of development in artificial intelligence, privacy, identity, inclusiveness, environmental responsibility, internet censorship, network policy, plagiarism, intellectual property and others. All examples will be drawn from current and recent events with readings from a range of sources both journalistic and academic. Course assignments will have real-world applications and offer students opportunities for developing their speaking and writing skills...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 520",
+        "name": "THEORY AND PRACTICE OF SOFTWARE ENGINEERING",
+        "description": "Introduces students to the principal activities and state-of-the-art techniques involved in developing high-quality software systems. Topics include: requirements engineering, formal specification methods, design principles & patterns, verification & validation, debugging, and automated software engineering. This course counts as a CS Elective for the CS Major.",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 528",
+        "name": "MOBILE AND UBIQUITOUS COMPUTING",
+        "description": "This course will introduce students to the field of mobile sensing and ubiquitous computing (Ubicomp) an emerging CS research area that aims to design and develop disruptive technologies with hardware and software systems for real-world messy, noisy and mobile scenarios. The students will learn how to build mobile sensing systems, how to implement it with ubiquitous computing tools, how to make sense of the sensor data and model the target variables. Lastly, the students will learn how to critically think about problems in many application areas including Human-Computer Interaction, Medicine...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 532",
+        "name": "SYSTEMS FOR DATA SCIENCE",
+        "description": "In this course, students will learn the fundamentals behind large-scale systems in the context of data science. We will cover the issues involved in scaling up (to many processors) and out (to many nodes) parallelism in order to perform fast analyses on large datasets. These include locality and data representation, concurrency, distributed databases and systems, performance analysis and understanding. We will explore the details of existing and emerging data science platforms, including MapReduce-Hadoop, Spark, and more. This course counts as a CS Elective for the CS Major...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 535",
+        "name": "COMPUTER ARCHITECTURE",
+        "description": "The structure of digital computers is studied at several levels, from the basic logic level, to the component level, to the system level. Topics include: the design of basic components such as arithmetic units and registers from logic gates; the organization of basic subsystems such as the memory and I/O subsystems; the interplay between hardware and software in a computer system; the von Neumann architecture and its performance enhancements such as cache memory, instruction and data pipelines, coprocessors, and parallelism. Semester team project to design an architecture and develop a software simulation of it...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 546",
+        "name": "APPLIED INFORMATION RETRIEVAL",
+        "description": "COMPSCI 546 is a graduate level course intended to cover information retrieval and other information processing activities, from an applied perspective. There will be numerous programming projects and assignments. It provides a richer technical follow on to COMPSCI 446 (Search Engines) for undergraduates interested in a deeper understanding of the technologies. It also provides a strong basis for continuing on with COMPSCI 646 (Information Retrieval) for those graduate students who are interested in a more complete theoretical coverage of the area. Topics will include: search engine construction...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 550",
+        "name":"INTRODUCTION TO SIMULATION",
+        "description": "How can we use computers to design systems and, more generally, make decisions, in the face of complexity and uncertainty? Simulation techniques apply the power of the computer to study complex stochastic systems when analytical or numerical techniques do not suffice. It is the most frequently used methodology for the design and evaluation of computer, telecommunication, manufacturing, healthcare, financial, and transportation systems, to name just a few application areas. Simulation is an interdisciplinary subject, incorporating ideas and techniques from computer science, probability, statistics...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 561",
+        "name": "SYSTEM DEFENSE AND TEST",
+        "description":"This class trains students to detect and analyze weaknesses and vulnerabilities in target systems as a method of assessing the security of a system. We focus on tools and techniques that an attacker would employ but from the perspective of an ethical system administrator. Topics include tools and techniques for penetration testing and attacks, information gathering, social engineering, and defenses. Specific topics include malware, denial of service attacks, SQL injection, buffer overflow, session hijacking, and system hacking, network sniffing and scans, wireless encryption weaknesses and other WiFi issues, IDS/firewall evasion, metasploit tools, physical security, and setting up honeypots.",
+        "credit":"3"
+      },
+      {
+        "code": "COMPSCI 564",
+        "name": "CYBER EFFECTS",
+        "description": "This course covers a broad range of topics related to cyber security and operations...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 565",
+        "name": "ADVANCED DIGITAL FORENSIC SYSTEMS",
+        "description": "This course introduces students to the principal activities and state-of-the-art techniques involved in developing digital forensics systems...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 574",
+        "name": "INTELLIGENT VISUAL COMPUTING",
+        "description": "Intelligent visual computing is an emerging new field that seeks to combine modern trends in machine learning, computer graphics, computer vision to intelligently process...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 589",
+        "name": "MACHINE LEARNING",
+        "description": "This course will introduce core machine learning models and algorithms for classification, regression, clustering, and dimensionality reduction...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 590AB",
+        "name": "QUANTUM CRYPTOGRAPHY AND COMMUNICATION",
+        "description": "The ability to transmit quantum information over long distances will enable implementation of many fascinating quantum communication tasks...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 590AE",
+        "name": "MOBILE AND WIRELESS NETWORKS",
+        "description": "This course covers wireless networking and mobility principles and practice...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 596E",
+        "name": "INDEPENDENT STUDY - MACHINE LEARNING APPLIED TO CHILD RESCUE",
+        "description": "Students will work collaboratively to construct production-grade software used to advance the goal of Child Rescue...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 603",
+        "name": "ROBOTICS",
+        "description": "This course is intended to serve as an advanced overview of robotics spanning the complete autonomy loop: perception, planning, and control...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 611",
+        "name": "ADVANCED ALGORITHMS",
+        "description": "Principles underlying the design and analysis of efficient algorithms. Topics to be covered include: divide-and-conquer algorithms, graph algorithms, matroids and greedy algorithms...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 614",
+        "name": "RANDOMIZED ALGORITHMS WITH APPLICATIONS TO DATA SCIENCE",
+        "description": "Randomness has proven itself to be a useful resource for developing provably efficient algorithms and protocols for large scale data processing...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 627",
+        "name": "FIXING SOCIAL MEDIA",
+        "description": "Over the past decade, user-generated participatory media social media has emerged as the dominant model for content of the Internet...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 645",
+        "name": "DATABASE DESIGN AND IMPLEMENTATION",
+        "description": "This course covers the design and implementation of traditional relational database systems as well as advanced data management systems...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 651",
+        "name": "OPTIMIZATION IN COMPUTER SCIENCE",
+        "description": "Much recent work in computer science in a variety of areas, from game theory to machine learning and sensor networks, exploits sophisticated methods of optimization...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 670",
+        "name": "COMPUTER VISION",
+        "description": "This course will explore current techniques for the analysis of visual data (primarily color images)...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 674",
+        "name": "INTELLIGENT VISUAL COMPUTING",
+        "description": "Intelligent visual computing is an emerging new field that seeks to combine modern trends in machine learning, computer graphics, computer vision to intelligently process...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 677",
+        "name": "DISTRIBUTED AND OPERATING SYSTEMS",
+        "description": "This course provides an in-depth examination of the principles of distributed systems and advanced concepts in operating systems...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 683",
+        "name": "ARTIFICIAL INTELLIGENCE",
+        "description": "In-depth introduction to Artificial Intelligence focusing on techniques that allow intelligent systems to reason effectively with uncertain information...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 685",
+        "name": "ADVANCED NATURAL LANGUAGE PROCESSING",
+        "description": "This course covers a broad range of advanced level topics in natural language processing...",
+        "credit": "3"
+      },
+      {
+        "code": "COMPSCI 688",
+        "name": "PROBABILISTIC GRAPHICAL MODELS",
+        "description": "Probabilistic graphical models are an intuitive visual language for describing the structure of joint probability distributions using graphs...",
+        "credit": "3"
+      }
+  ]
+  

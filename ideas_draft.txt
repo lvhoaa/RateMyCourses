@@ -1,0 +1,17 @@
+- OUTLINE NEW PROJ: Django
+
+RATE MY COURSE 
+- Log in to rate and post comment on the course 
+- Fetch data: display basic information about the course: code, title, content 
+- Homepage: 1. Search bar: search the course: will ADJUST THE TABLE BELOW   2. Tables of ALL different sample courses. IN each card: course name, title, stars (display using js fetch database) -> click to link to the coursepage
+- Course page & RATING: TOP: button to link to RATE FORM page; each review is a card: rating stars; AI summarize (top page)
++ Each rating: stars; professor; grade, difficulty, comment; Leave review FORM (needs login) at the end -- can choose to be anonymous or normal 
+
+
+TECH SKILLS 
+- Leverage OPENAI's api: craft 3-word summary of each review -> feed all comment data and click go; 
+- Login/logout/ Register: normal viewers cannot post cmt bc QUALITY ->done 
+- OAuth: Google authentication system 
+- websocket somehow: chat system  
+- Fetch data from UMass CS specifically -> done 
+- Ban bad words -> done 

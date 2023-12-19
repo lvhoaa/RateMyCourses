@@ -1,0 +1,200 @@
+
+{% extends 'base.html' %}
+
+{% block title %} {{ course.code }} - RATINGS {% endblock %}
+
+{% block content %}
+  <div style="text-align: center;">
+    <p style="font-weight: bold; font-size: 36px; margin-bottom: -18px;">{{ course.code }}</p>
+    <p style="color: #999; font-size: 24px;">{{ course.name }}</p>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-left: 150px; margin-right: 150px; margin-top: 20px; font-size: 18px;">
+    <div style="width: 45%; margin-right: 9%;">
+      <h2>Course Details</h2>
+      <p><strong>Description:</strong> {{ course.description }}</p>
+      <p><strong>Credit:</strong> {{ course.credit }}</p>
+    </div>
+
+    <div style="width: 45%;">
+      <h2>Rating Stats</h2>
+      <p><strong>Quality:</strong> {{avg_stars}} ★ </p>
+   
+      <p><strong>Grade:</strong> {{avg_grade}} 📝 </p>
+      <p><strong>Difficulty:</strong> {{avg_difficulty}} ☹</p>
+    </div>
+  </div>
+
+  {{ratings.stars}}
+  <h2 style="font-size: 36px; font-weight: lighter; text-align: center; margin-top: 80px; margin-bottom: 50px"> Past Students' Reviews </h2>
+  
+  <div style="height: 400px; width: 60%; overflow-y: scroll; max-height: 400px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; border-radius: 10px; border: 1px solid #ddd; padding: 10px; align-items: center;">
+    {% for rating in ratings %}
+      <div style="width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 10px;">
+        <p style="margin-bottom: 40px; display: flex; justify-content: space-between;">
+          <span>
+            {% if rating.anonymous %}
+            <span style="color: purple">  <strong> Anonymous  </strong> </span> &nbsp;&nbsp;&nbsp;&nbsp;
+            {% else %}
+            <span style="color: purple">  <strong> {{rating.author}} </strong> </span> &nbsp;&nbsp;&nbsp;&nbsp;
+            {% endif%}
+
+            <strong>Quality: </strong>  {{rating.stars}} ★ &nbsp;&nbsp;&nbsp;&nbsp;
+            {% comment %} <strong>Quality: </strong>{% with num_stars=3 %}{% for _ in num_stars|default:0|add:0|range %}  &#9733; {% endfor %}{% endwith %}&nbsp;&nbsp;&nbsp;&nbsp; {% endcomment %}
+            <strong>Grade:</strong> {{ rating.grade }} &nbsp;&nbsp;&nbsp;&nbsp; 
+            <strong>Difficulty:</strong> {{ rating.difficulty }} ☹
+          </span>
+          <span style="text-align: right;">
+            {{ rating.date }}
+          </span>
+        </p>
+  
+        <p> {{ rating.comment }} </p>
+
+        <div>
+          <span style="background-color: #f2f2f2; padding: 7px; border-radius: 20px; display: inline-block;  margin-right:15px;">{{rating.summary_word1}}</span>
+          <span style="background-color: #f2f2f2; padding: 7px; border-radius: 20px; display: inline-block;  margin-right:15px;">{{rating.summary_word2}}</span>
+          <span style="background-color: #f2f2f2; padding: 7px; border-radius: 20px; display: inline-block; margin-right:15px;">{{rating.summary_word3}}</span>
+        </div>
+        
+      </div>
+    {% endfor %}
+  </div>
+
+  <h2 style="font-size: 36px; font-weight: lighter; text-align: center; margin-top: 80px; margin-bottom: 50px;">Leave a Review</h2>
+
+  {% if user.is_authenticated %}
+  <style>
+    .star-rating {
+      font-size: 24px;
+    }
+
+    .star {
+      cursor: pointer;
+      color: #ccc;
+      display: inline-block;
+    }
+
+    .star.filled {
+      color: gold;
+    }
+
+    .emoji-rating {
+      font-size: 24px;
+  }
+
+  .emoji {
+      cursor: pointer;
+      display: inline-block;
+      color: #ccc;
+      margin-right: 5px; /* Adjust spacing between emojis as needed */
+  }
+
+  .emoji.filled {
+      color: black; /* Adjust the color for filled emojis as needed */
+  }
+  </style>
+
+  <div style="display: flex; justify-content: center; margin-left: 150px; margin-right: 150px; margin-top: 20px; font-size: 18px; border-radius: 10px; border: 1px solid #ddd; padding: 10px; margin-bottom: 100px;">
+    <form method="POST" action="#" style="display: flex; justify-content: space-between; width: 80%; margin-top: 50px; ">
+      {% csrf_token %}
+      
+      <div style="width: 45%; margin-right: 5%;">
+        <label for="{{ form.stars.id_for_label }}"> <strong>Quality:</strong> </label>
+        
+        <!-- Star rating implementation -->
+        <div class="star-rating" data-stars="{{ form.stars.value }}">
+          {% for i in "12345" %}
+            <span class="star{% if i <= form.stars.value %} filled{% endif %}" data-value="{{ i }}">★</span>
+          {% endfor %}
+        </div>
+        
+        <input type="hidden" name="{{ form.stars.name }}" id="{{ form.stars.id_for_label }}" value="{{ form.stars.value }}">
+        <br><br>
+        
+        <label for="{{ form.grade.id_for_label }}"> <strong>Grade:</strong> </label>
+        {{ form.grade }}
+        <br><br>
+      
+        <label for="{{ form.difficulty.id_for_label }}"> <strong>Difficulty:</strong> </label>
+        
+        <!-- Difficulty rating implementation with sad emojis -->
+        <div class="emoji-rating" data-difficulty="{{ form.difficulty.value }}">
+          {% for i in "12345" %}
+            <span class="emoji{% if i <= form.difficulty.value %} filled{% endif %}" data-value="{{ i }}">☹</span>
+          {% endfor %}
+        </div>
+        
+        <input type="hidden" name="{{ form.difficulty.name }}" id="{{ form.difficulty.id_for_label }}" value="{{ form.difficulty.value }}">
+        <br><br>
+
+        <label for="{{ form.anonymous.id_for_label }}"> <strong>Anonymous:</strong> </label>
+        {{ form.anonymous }}
+      </div>
+
+      <div style="width: 45%; display: flex; flex-direction: column;">
+        <label for="{{ form.comment.id_for_label }}"> <strong>Comment:</strong> </label>
+        {{ form.comment }}
+        <br><br>
+        <button type="submit" style="align-self: flex-end; background-color: rgb(0, 0, 139);; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 40px">Submit Rating</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript for star rating
+    document.addEventListener('DOMContentLoaded', function () {
+      const stars = document.querySelectorAll('.star');
+      const ratingInput = document.querySelector('[name="{{ form.stars.name }}"]');
+
+      stars.forEach(star => {
+        star.addEventListener('click', function () {
+          const value = this.getAttribute('data-value');
+          ratingInput.value = value;
+
+          // Update star colors
+          stars.forEach(s => {
+            s.classList.remove('filled');
+          });
+
+          for (let i = 1; i <= value; i++) {
+            stars[i - 1].classList.add('filled');
+          }
+        });
+      });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const emojis = document.querySelectorAll('.emoji');
+      const difficultyInput = document.querySelector('[name="{{ form.difficulty.name }}"]');
+
+      emojis.forEach(emoji => {
+          emoji.addEventListener('click', function () {
+              const value = this.getAttribute('data-value');
+              difficultyInput.value = value;
+
+              // Update emoji colors
+              emojis.forEach(e => {
+                  e.classList.remove('filled');
+              });
+
+              for (let i = 1; i <= value; i++) {
+                  emojis[i - 1].classList.add('filled');
+              }
+          });
+      });
+  });
+  </script>
+
+  {% else %}
+  <div style="display: flex; justify-content: center; margin-left: 150px; margin-right: 150px; margin-top: 20px; font-size: 18px; border-radius: 10px; border: 1px solid #ddd; padding: 10px; margin-bottom: 100px;background-color:grey;">
+    <form method="POST" action="#" style="display: flex; justify-content: space-between; width: 80%; margin-top: 50px; ">
+      {% csrf_token %}
+      <h3 style="text-align:center; align-items: center; margin-bottom: 70px;"> Only users are allowed to rate. <a href="/login" style="text-decoration: None; ">Login</a> or <a href="/register" style="text-decoration: None; ">Register</a> to rate! </h3>
+    </form>
+  </div>
+  
+  {% endif %}
+
+{% endblock %}

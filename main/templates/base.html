@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    
+    <link rel="shortcut icon" href="{%  static 'images/school-icon.png' %}">   
+    <title>{% block title %} Rate My Courses {% endblock %}</title>
+    
+    <style>
+      body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(0, 0, 139);
+      }
+
+      nav {
+        background-color: rgb(0, 0, 139);
+        overflow: hidden;
+        height: 60px; /* Adjust the height as needed */
+      }
+
+      #left-side,
+      #right-side {
+        float: left;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 25px;
+        height: 100%;
+        font-family: "Montserrat", sans-serif; /* Montserrat as the font */
+        font-size: 18px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+      }
+
+      #right-side {
+        float: right;
+      }
+
+      #left-side a,
+      #right-side a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Use the inherited color (white) */
+      }
+
+      #content {
+        margin-top: 50px; /* Adjust this margin to provide space for the navbar */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <nav>
+      {% if user.is_authenticated %}
+      <div id="left-side">
+        <a href="/"> Rate My Courses </a>
+      </div>
+      <div id="right-side">
+        <a href="/logout"> Log Out </a>
+      </div>
+      {% else %}
+      <div id="left-side">
+        <a href="/"> Rate My Courses </a>
+      </div>
+      <div id="right-side">
+        <a href="/login"> Log In </a>
+      </div>
+      {% endif %}
+    </nav>
+    <div id="content" name="content">{% block content %} {% endblock %}</div>
+  </body>
+</html>

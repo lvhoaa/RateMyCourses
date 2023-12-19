@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Register Account
+{% endblock %}
+
+{% block content %}
+    <style>
+        /* Common Styles Start */
+        .registration-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 80px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn-success {
+            background-color: rgb(0, 0, 139);
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .btn-success:hover {
+            background-color: #45a049;
+        }
+        /* Common Styles End */
+
+        /* Page-Specific Styles Start */
+        /* Add any additional styles specific to this page */
+        /* Page-Specific Styles End */
+    </style>
+
+    <div class="registration-container">
+        <form method="POST" class="registration-form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.username.id_for_label }}">Username:</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.email.id_for_label }}">Email:</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password1.id_for_label }}">Password:</label>
+                {{ form.password1 }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password2.id_for_label }}">Confirm Password:</label>
+                {{ form.password2 }}
+            </div>
+            <button type="submit" class="btn-success">Register</button>
+        </form>
+    </div>
+{% endblock %}
