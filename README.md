@@ -2,6 +2,16 @@
 
 RateMyCourses is a web application built with Django to serve as a platform for students to see and create reviews about university courses.
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Illustrations](#illustrations)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Project Overview 
 
 Knowing choosing the right course in college is difficult, RateMyCourses aims to help students find their best-fit courses by reading reviews and advice from past students. 
