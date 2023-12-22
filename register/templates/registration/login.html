@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load socialaccount %}
+
 
 {% block title %}
     Log In
@@ -81,5 +83,8 @@
             Login
         </button>
         <p>Don't have an account? Create one <a href="/register">here</a></p>
+        <p><a href="{% provider_login_url 'google' %}?next=/">Login with Google</a>
+            
+        </p>
     </form>
 {% endblock %}
