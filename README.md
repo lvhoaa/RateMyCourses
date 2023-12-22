@@ -21,7 +21,7 @@ Key features of RateMyCourses project includes:
 - Integration with OpenAI API for crafting high-quality summary from course reviews.
 - Develop star-rating system on multiple aspects of a course: quality, grading, and difficulty.
 - Support profanity detection to obtain comments of highest quality
-- Support login/logout/registration system to validate users
+- Support Google OAuth/login/logout/registration system to validate users
 - Fetch the latest data on college current courses
 
 ## Illustrations
