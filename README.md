@@ -18,11 +18,11 @@ Knowing choosing the right course in college is difficult, RateMyCourses aims to
 
 Key features of RateMyCourses project includes: 
 - Django-based web application for reading and making reviews
+- Designed database with one-to-many relationships using ORMs and PostgreSQL. 
 - Integration with OpenAI API for crafting high-quality summary from course reviews.
 - Develop star-rating system on multiple aspects of a course: quality, grading, and difficulty.
 - Support profanity detection to obtain comments of highest quality
 - Support Google OAuth/login/logout/registration system to validate users
-- Fetch the latest data on college current courses
 
 ## Illustrations
 
